@@ -48,13 +48,13 @@ function Header() {
               </Link>
           </div>
           <ul className='flex ml-auto'>
-            {navItems.map((item) => 
-            item.active ? (
-              <li key={item.name}>
+            {navItems.map((items) => 
+            items.active ? (
+              <li key={items.name}>
                 <button
-                onClick={() => navigate(item.slug)}
+                onClick={() => navigate(items.slug)}
                 className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
-                >{item.name}</button>
+                >{items.name}</button>
               </li>
             ) : null
             )}
